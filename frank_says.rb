@@ -10,6 +10,8 @@ get '/frank-says' do
 end
 
 get "/monstas" do
+  p params
+  @name = params["name"]
   erb :monstas
 end
 #this is a wrapping template, sinatra calls it a layout template
